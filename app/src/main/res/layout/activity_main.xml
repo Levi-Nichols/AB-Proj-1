@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/triangle_business_center"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_alignTop="@id/logo"
+        android:background="@android:color/white"
+        tools:layout_editor_absoluteY="44dp"
+        android:id="@+id/topPanel"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="386dp"
+        android:layout_height="79dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/triangle_logo_tagline"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <ImageView
+        android:layout_width="124dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/topPanel"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="38dp"
+        android:src="@drawable/triangle_address"
+        android:id="@+id/topLeft"/>
+
+    <ImageView
+        android:layout_width="124dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/topPanel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="38dp"
+        android:src="@drawable/triangle_hours"
+        android:id="@+id/topRight"/>
+
+    <ImageView
+        android:layout_width="124dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="38dp"
+        android:layout_marginBottom="47dp"
+        android:src="@drawable/triangle_email"
+        android:id="@+id/bottomLeft" />
+
+    <ImageView
+        android:layout_width="124dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="38dp"
+        android:layout_marginBottom="47dp"
+        android:src="@drawable/triangle_phone"
+        android:id="@+id/bottomRight" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/agribusiness"
+        android:background="@android:color/white"
+        tools:layout_editor_absoluteY="44dp"
+        android:id="@+id/bottomPanel"/>
+
+    <TextView
+        android:id="@+id/agribusiness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:text="Agribusiness Insurance"
+        android:textSize="34dp"
+        android:textStyle="bold"
+        android:textColor="#00a542"
+        android:shadowColor="@color/text_shadow"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
+
+</RelativeLayout>
+
